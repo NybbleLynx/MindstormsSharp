@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Solution Items", ".Solution Items", "{A7C2B7F0-A209-4F50-A11C-18B2A19FB379}"
+	ProjectSection(SolutionItems) = preProject
+		MindstormsSharp.sln.startup.json = MindstormsSharp.sln.startup.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{FA4A0D28-9230-4CC5-94A9-2C87F7D49CDE}"
 EndProject
@@ -11,9 +14,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9CBEA1A8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{1E45BD90-75FA-4D20-8C7E-458C69B55781}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindstormsSharp.Core", "Source\MindstormsSharp.Core\MindstormsSharp.Core.csproj", "{9DED73DD-7DA1-46BF-9CBC-FA72BE9E0511}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindstormsSharp.Core.Tests", "Tests\MindstormsSharp.Core.Tests\MindstormsSharp.Core.Tests.csproj", "{31C7D983-41CF-48B9-9B07-395E1A51D869}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DED73DD-7DA1-46BF-9CBC-FA72BE9E0511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DED73DD-7DA1-46BF-9CBC-FA72BE9E0511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DED73DD-7DA1-46BF-9CBC-FA72BE9E0511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DED73DD-7DA1-46BF-9CBC-FA72BE9E0511}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31C7D983-41CF-48B9-9B07-395E1A51D869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31C7D983-41CF-48B9-9B07-395E1A51D869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31C7D983-41CF-48B9-9B07-395E1A51D869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31C7D983-41CF-48B9-9B07-395E1A51D869}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9DED73DD-7DA1-46BF-9CBC-FA72BE9E0511} = {1E45BD90-75FA-4D20-8C7E-458C69B55781}
+		{31C7D983-41CF-48B9-9B07-395E1A51D869} = {9CBEA1A8-2755-4E15-8DFC-09C047F6715C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A8025832-76C7-4948-8B60-362A9173F9C0}
